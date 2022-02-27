@@ -6,6 +6,8 @@ body {
     align-items:center;
     justify-content: space-between;
     background-color: rgb(197, 230, 243);
+    height: 100vh;
+    gap: 20px;
 }
 
 h1 {
@@ -34,6 +36,7 @@ button {
 
 #gridSpace {
     height: 80vh;
+    aspect-ratio: 1;
     background-color: white;
 }
 
@@ -44,4 +47,8 @@ button {
 .square {
     border: 1px solid rgba(0, 0, 0, .1);
     background-color: white;
+}
+
+#footer {
+    height: 100px;
 }
