@@ -11,8 +11,8 @@ function randomColor () {
 
 function createGrid (num) {
     num = tooLittleTooFew(num);
-    let width = gridSpace.offsetWidth;
-    width /= num;
+    let height = gridSpace.offsetHeight;
+    height /= num;
     let transparency = "0.0";
     color = randomColor() + "," + transparency + ")";
     while (grid.firstChild) {
@@ -25,7 +25,7 @@ function createGrid (num) {
             let square = document.createElement('div');
             square.classList.add('square');
             square.style.aspectRatio = "1"
-            square.style.width = width + "px";
+            square.style.height = height + "px";
             let opacity = 1;
             square.addEventListener('mouseover', () => {
                 if (opacity <= 9) {
